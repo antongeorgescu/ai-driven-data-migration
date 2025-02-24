@@ -1,0 +1,24 @@
+Generate the T-SQL scripts for creating a Sql Server database that has the following entities and attributes:
+
+Entity: Student
+Attributes: StudentID, FirstName, LastName, Address, LoanInfoID, CommunicationID, StudyInfoID, EducationInstitutionID
+
+Entity: Communication
+Attributes: CommunicationID, PhoneNumber, Email
+
+Entity: LoanInfo
+Attributes: LoanInfoID,EnrollmentType,LoanAmount,YearStarted,LoanBalance,PercentagePaid
+
+Entity: StudyInfo
+Attributes: StudyInfoID,ProgramOfStudy,ProgramCode,CollegeCode
+
+Entity: EducationInstitution
+Attributes: EducationInstitutionID,College,CollegeCode, ProvinceID
+
+Entity: Province
+Attributes: ProvinceID, Province
+
+The first member of "Attributes" list under each entity is a primary key.
+Create foreign keys where is applicable.
+
+Make sure you drop the database if exists and you re-create it.

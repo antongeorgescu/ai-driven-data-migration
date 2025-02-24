@@ -1,0 +1,16 @@
+Create a script named "generate_data.py" that generates a dataset with the following fields: Name, Address, Phone Number, Email, Enrollment Type, Loan Amount, Year Started, Loan Balance, Percentage Paid. The dataset will be called "syntehic_data.csv", will have CSV format, and stored in "data" folder once it's generated
+
+The addresses have to be located in the following Canadian provinces: Ontario, Alberta, Nova Scotia, Manitoba, P.E.I.
+The addresses have to have names of real cities in those provinces. Real postal codes have to be attached
+"Enrollment Type" must be either NSL or CAL
+"Year Started" must be in the range 2019 to 2023
+"Loan Amount" must be in range 10,000CAD to 28,000CAD
+"Loan Balance" must be smaller by at least 20% than "Loan Amount"
+"Percentage Paid" must be calculated automatically as percentage value without decimals of "Loan Amount" minus "Loan Balance" out of "Loan Amount". Format the percentage value to include "%"
+"Program of Study" is randomly picked among the following: Biochemistry, Engineering, Computer Technology, Social Studies, Political Science, Climate Change, Physics, Philosophy
+"College" is randomly picked among the following: University of Toronto in Ontario, Quuens University in Ontario, University of Alberta in Alberta, Dalhousie University in Nova Scotia, University of Manitoba in Manitoba, Holland College in P.E.I.
+Create 6 letter codes for each program of study
+Create 5 letter codes for each University
+Use the popular two-letter codes for Canadian provinces
+Include in the recording the province name and province code
+The strings under column "Phone Number" should have one of the following formats ("d" stands for digit): ddd ddd-dddd, (ddd) ddd-dddd, (ddd) ddd-dddd xdddd, ddd ddd dddd

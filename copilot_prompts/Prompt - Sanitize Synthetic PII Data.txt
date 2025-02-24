@@ -1,0 +1,16 @@
+Create a script called "sanitize_data.py" that sanitizes the data from file "data/synthetic_data.csv" file, by using one or more of the following methods:
+(1) Identify PII: Determine which fields in your dataset contain PII, such as names, addresses, phone numbers, email addresses, social security numbers, etc.
+(2) Masking: Replace PII with masked values. 
+(3) Tokenization: Replace sensitive data with unique tokens that can be mapped back to the original data if necessary. This is useful if you need to maintain some level of data integrity for analysis.
+(4) Generalization: Reduce the precision of data to make it less identifiable. For example, instead of storing exact ages, you can store age ranges.
+(5) Data Encryption: Encrypt sensitive fields so that they are not readable without a decryption key.
+
+For emails, keep the first two characters and whatever comes after dot, and mask the rest
+For addresses, mask the street number and keep the rest
+For names keep the first and last characters in first and last names, and mask the rest
+For phone numbers grouped under "Phone Number" column, remove the round brackets, keep in clear the first 3 digits and extensions, where applicable and mask with "*" character the rest of the digits. 
+Also, apply Luhn algorithm wherever applicable.
+
+Generate 2000 synthetic records.
+
+The sanitized dataset will be saved into "data" folder, in CSV format, under the name "sanitized_synthetic_data.csv"

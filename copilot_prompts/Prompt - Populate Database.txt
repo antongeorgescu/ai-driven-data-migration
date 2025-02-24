@@ -1,0 +1,3 @@
+Create a Python script that populates the database created by the script "create_database.sql" with the values stored in "data/sanitized_synthetic_data.csv"
+
+Allow dynamic provision of username and password as part of database connection string
